@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.portal_override_default_page_location"><![CDATA[Portal als Startseite anzeigen]]></item>
+		<item name="wcf.acp.option.portal_override_default_page_location.description"><![CDATA[Bei Aktivierung wird beim Aufruf des Forums automatisch das Portal angezeigt.]]></item>
+		<item name="wcf.acp.option.portal_header_override_page_location"><![CDATA[Portal im Header-Logo verlinken]]></item>
+		<item name="wcf.acp.option.portal_header_override_page_location.description"><![CDATA[Bei Aktivierung wird man beim Klicken auf das Header-Logo auf das Portal geleitet.]]></item>
+	</category>
+</language>

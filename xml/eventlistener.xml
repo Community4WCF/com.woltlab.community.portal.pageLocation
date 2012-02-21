@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/event-listener.xsd">	
+	<import>
+		<eventlistener>
+			<eventclassname>SessionFactory</eventclassname>
+			<eventname>shouldInit</eventname>
+			<environment>user</environment>
+			<listenerclassfile>lib/system/event/listener/OverrideDefaultPageLocationListener.class.php</listenerclassfile>
+			<inherit>1</inherit>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>StructuredTemplate</eventclassname>
+			<eventname>shouldDisplay</eventname>
+			<environment>user</environment>
+			<listenerclassfile>lib/system/event/listener/HeaderOverridePageLocationListener.class.php</listenerclassfile>
+		</eventlistener>
+	</import>
+</data>

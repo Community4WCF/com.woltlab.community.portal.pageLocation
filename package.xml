@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: package.xml 1815 2011-05-31 12:46:08Z TobiasH87 $ -->
+<package name="com.woltlab.community.portal.pageLocation" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Portal as home page]]></packagename>
+		<packagename language="de"><![CDATA[Portal als Startseite]]></packagename>
+		<packagename language="de-informal"><![CDATA[Portal als Startseite]]]></packagename>
+		<packagedescription><![CDATA[Changes link location to portal inside page header.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Verlinkung des Seitenlogos auf das Portal und setzt das Portal als Startseite.]]></packagedescription>
+		<packagedescription language="de-informal"><![CDATA[Verlinkung des Seitenlogos auf das Portal und setzt das Portal als Startseite.]]></packagedescription>
+		<version>1.2.0 Beta 1</version> <!-- codename: Portal as home page -->
+		<packageurl><![CDATA[http://community4wcf.de]]></packageurl>
+		<date>2011-05-31</date>
+		<standalone>0</standalone>
+		<isunique>0</isunique>
+		<plugin>com.woltlab.wbb</plugin>
+	</packageinformation>
+
+	<licenseinformation>
+		<license><![CDATA[LGPL]]></license>
+		<licenseURL><![CDATA[http://www.gnu.org/licenses/lgpl.html]]></licenseURL>
+	</licenseinformation>
+	<authorinformation>
+		<author><![CDATA[WoltLab Community]]></author>
+		<authorURL><![CDATA[http://www.woltlab.com/forum/]]></authorURL>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="2.2.1">com.woltlab.community.portal</requiredpackage>
+		<requiredpackage>com.woltlab.wbb</requiredpackage>
+		<requiredpackage minversion="1.1.6 pl 3">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="0.1.0" file="requirements/com.woltlab.community.wbb.header.customization_wbb3.tar">com.woltlab.community.wbb.header.customization</requiredpackage>
+		<!-- <requiredpackage minversion="1.1.0 Beta 1" file="requirements/com.dtdesign.wbb.header.customization.tar.gz">com.dtdesign.wbb.header.customization</requiredpackage> --> <!-- old package -->
+	</requiredpackages>
+
+	<instructions type="install">
+		<!-- files -->
+		<files>files.tar</files>
+		<!-- config -->
+		<options>xml/options.xml</options>
+		<eventlistener>xml/eventlistener.xml</eventlistener>
+		<!-- languages -->
+		<languages languagecode="de">xml/de.xml</languages>
+		<languages languagecode="de-informal">xml/de-informal.xml</languages>
+		<languages languagecode="en">xml/en.xml</languages>
+	</instructions>
+	<instructions type="update" fromversion="1.2.0 Beta 1">
+		<!-- files -->
+		<files>files.tar</files>
+		<!-- config -->
+		<options>xml/options.xml</options>
+		<!-- languages -->
+		<languages languagecode="de">xml/de.xml</languages>
+		<languages languagecode="de-informal">xml/de-informal.xml</languages>
+		<languages languagecode="en">xml/en.xml</languages>
+	</instructions>
+</package>
